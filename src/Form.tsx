@@ -26,6 +26,7 @@ export class Form extends React.Component<Props, State> {
 
     render() {
         return <form className="commentForm" onSubmit={ e => this.handleSubmit(e) }>
+                 <h1>Using React.findDOMNode in TypeScript</h1>
                  <input type="text" placeholder="Your name" ref="name" />
                  <button type="submit" >Submit</button>
                  {this.state.name}
